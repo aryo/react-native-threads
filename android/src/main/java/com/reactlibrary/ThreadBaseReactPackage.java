@@ -9,6 +9,8 @@ import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.modules.core.ExceptionsManagerModule;
 import com.facebook.react.modules.core.TimingModule;
 import com.facebook.react.modules.debug.SourceCodeModule;
+import com.facebook.react.modules.deviceinfo.DeviceInfoModule;
+import com.facebook.react.modules.image.ImageLoaderModule;
 import com.facebook.react.modules.intent.IntentModule;
 import com.facebook.react.modules.network.NetworkingModule;
 import com.facebook.react.modules.storage.AsyncStorageModule;
@@ -49,7 +51,9 @@ public class ThreadBaseReactPackage implements ReactPackage {
                 new VibrationModule(catalystApplicationContext),
                 new WebSocketModule(catalystApplicationContext),
                 new ThreadSelfModule(catalystApplicationContext),
-                new DevSettingsModule(catalystApplicationContext, reactInstanceManager.getDevSupportManager())
+                new DevSettingsModule(catalystApplicationContext, reactInstanceManager.getDevSupportManager()),
+                new DeviceInfoModule(catalystApplicationContext),
+                new ImageLoaderModule(catalystApplicationContext)
         );
     }
 

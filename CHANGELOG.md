@@ -2,6 +2,10 @@
 
 This repository adheres to semantic versioning and follows the conventions of [keepachangelog.com](http://keepachangelog.com).
 
+## 1.1.0 - 2023-11-17
+### Changed
+- Android: Support React Native 0.69
+
 ## 1.0.3 - 2023-11-07
 ### Fixed
 - Bundle not loading correctly, see https://github.com/joltup/react-native-threads/issues/139#issuecomment-1103094007
